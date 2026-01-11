@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="dark" lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>プロフィール詳細</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee8c2b",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221910",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "Noto Sans JP", "sans-serif"],
+                        "body": ["Noto Sans JP", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-white font-body overflow-x-hidden selection:bg-primary selection:text-white">
+<div class="relative flex flex-col min-h-screen pb-28">
+<div class="relative w-full h-[45vh] min-h-[400px]">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Portrait of a young stylish man smiling in a cafe setting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCsAQtZaouKQLB11T1xE9qJWK71uCIGvGjX35kWQKTqAI-clZA8mHTuiRTaKcGtOSDJxvRfkToIXM53iLLtlJxkwgUeSltFY83VIQhhm62ylHN1LcOTjv1kWNLo991ymCTKKRezN4kwjN64QJCDa1V7sMQwwN2XBukB1Dg3yz4weu5qjyx2kFIlTckRXmTXqZHfzXCSj5rJAHbnIqGk9v4nqHECJgiNc98JQcHu9ZYPDbl0WfBG8rmXI1zOCt-_gVUeTKYDDkiGhlM');">
+</div>
+<div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-background-light dark:to-background-dark"></div>
+<div class="absolute top-0 left-0 w-full p-4 pt-6 flex justify-between items-center z-20 text-white">
+<button class="flex items-center justify-center w-10 h-10 rounded-full bg-black/20 backdrop-blur-md hover:bg-black/40 transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="flex items-center justify-center w-10 h-10 rounded-full bg-black/20 backdrop-blur-md hover:bg-black/40 transition-colors">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+</div>
+<div class="relative px-5 -mt-12 z-10 flex flex-col gap-6">
+<div>
+<div class="flex items-end justify-between">
+<h1 class="text-4xl font-extrabold tracking-tight leading-none text-[#111418] dark:text-white drop-shadow-sm font-display">
+                    Kenji, 27
+                </h1>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/90 dark:bg-white/10 backdrop-blur-sm border border-black/5 dark:border-white/10 mb-1">
+<div class="w-2 h-2 rounded-full bg-green-500"></div>
+<span class="text-xs font-bold uppercase tracking-wider opacity-80">オンライン</span>
+</div>
+</div>
+<div class="flex flex-col gap-2 mt-3">
+<div class="flex items-center text-[#637588] dark:text-[#9CA3AF]">
+<span class="material-symbols-outlined text-primary mr-1" style="font-size: 20px;">location_on</span>
+<span class="text-sm font-medium">東京 渋谷</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-xs font-semibold bg-[#06C755]/10 text-[#06C755] border border-[#06C755]/20">
+<span class="material-symbols-outlined" style="font-size: 14px; font-variation-settings: 'FILL' 1;">verified</span>
+                        LINE認証済み
+                    </span>
+</div>
+</div>
+</div>
+<div class="h-px w-full bg-[#e6e8eb] dark:bg-white/10"></div>
+<section>
+<h3 class="text-lg font-bold mb-3 flex items-center gap-2 font-display">
+<span class="material-symbols-outlined text-primary">person</span>
+                自己紹介
+            </h3>
+<p class="text-base text-[#111418] dark:text-[#d1d5db] leading-relaxed">
+                初めまして！渋谷に来たばかりで、近くの居酒屋を開拓できる飲み友達を探しています。IT企業で働いていて、ガジェット、アニメ、旅行の話が大好きです。気軽に飲みに行きましょう！🍻
+            </p>
+</section>
+<section>
+<h3 class="text-lg font-bold mb-3 flex items-center gap-2 font-display">
+<span class="material-symbols-outlined text-primary">local_bar</span>
+                好きなお酒
+            </h3>
+<div class="flex flex-wrap gap-2">
+<div class="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary-700 dark:text-primary hover:bg-primary/20 transition-colors cursor-default">
+<span class="mr-2 text-lg">🍺</span>
+<span class="text-sm font-semibold">ビール</span>
+</div>
+<div class="inline-flex items-center px-4 py-2 rounded-full bg-background-light dark:bg-[#2c241b] border border-[#e6e8eb] dark:border-white/10 text-[#111418] dark:text-[#e5e7eb]">
+<span class="mr-2 text-lg">🍶</span>
+<span class="text-sm font-medium">日本酒</span>
+</div>
+<div class="inline-flex items-center px-4 py-2 rounded-full bg-background-light dark:bg-[#2c241b] border border-[#e6e8eb] dark:border-white/10 text-[#111418] dark:text-[#e5e7eb]">
+<span class="mr-2 text-lg">🥃</span>
+<span class="text-sm font-medium">ハイボール</span>
+</div>
+<div class="inline-flex items-center px-4 py-2 rounded-full bg-background-light dark:bg-[#2c241b] border border-[#e6e8eb] dark:border-white/10 text-[#111418] dark:text-[#e5e7eb]">
+<span class="mr-2 text-lg">🍷</span>
+<span class="text-sm font-medium">ワイン</span>
+</div>
+</div>
+</section>
+<section>
+<h3 class="text-lg font-bold mb-3 flex items-center gap-2 font-display">
+<span class="material-symbols-outlined text-primary">groups</span>
+                飲み方のスタイル
+            </h3>
+<div class="flex flex-wrap gap-2">
+<div class="inline-flex items-center px-3 py-1.5 rounded-lg bg-[#eefcf2] dark:bg-green-900/20 text-green-700 dark:text-green-400 text-sm font-semibold border border-green-200 dark:border-green-900/50">
+<span class="material-symbols-outlined mr-1" style="font-size: 16px;">celebration</span>
+                    ワイワイ
+                </div>
+<div class="inline-flex items-center px-3 py-1.5 rounded-lg bg-[#fff7ed] dark:bg-orange-900/20 text-orange-700 dark:text-orange-400 text-sm font-semibold border border-orange-200 dark:border-orange-900/50">
+<span class="material-symbols-outlined mr-1" style="font-size: 16px;">restaurant</span>
+                    グルメ
+                </div>
+<div class="inline-flex items-center px-3 py-1.5 rounded-lg bg-[#f0f9ff] dark:bg-blue-900/20 text-blue-700 dark:text-blue-400 text-sm font-semibold border border-blue-200 dark:border-blue-900/50">
+<span class="material-symbols-outlined mr-1" style="font-size: 16px;">event</span>
+                    週末のみ
+                </div>
+</div>
+</section>
+<section>
+<h3 class="text-lg font-bold mb-3 font-display">ギャラリー</h3>
+<div class="grid grid-cols-3 gap-2">
+<div class="aspect-square rounded-xl overflow-hidden bg-gray-200 dark:bg-gray-800 relative group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Close up of sushi platter" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDlAl8e-vZXui5iIwyv4rx6cruvkf7hzDgm5hqidfEZ27KX0L4eeSpsSdOazVxfNM9gXGNkY_H8lbdh5ONUHoC5C0dU0uyUoRDJUYmZhvBwbLHETNSz0w9OMMoBRaD9zYyYVVYswb9hGkhqGIsSSWlNt2X4gAWzRDaCPemH1Ko1OhJwMGuP1jiHnN4JnNc_dXvCP3tH4aymZcF2-Fkxqo2wotNHPvoWPN9e6s5TRV5kWYzRw0bIgKKv5Izan7yu0sg5Tz0Milxyqnc');"></div>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden bg-gray-200 dark:bg-gray-800 relative group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Night street view of Tokyo with neon signs" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAE1_WyQN_KvzSTb9GtLbskPYK5nkygx-r4SePJpvZ9Y2woklyehl38G0YSK4Q7pxx089j_UsR6kTJsRH-h2HfRWClHcyloEG6PtKaXIGcnOQUXQWDvU6SFRItxVxqc873-mRfz82Ixs23brIqbImtp8faWYwH9_FOlKa5iHiXp0Ky1ibWOGWz3fDMAOdfBe-hg4z3qWf_auEIKAwQr1Y3S63tUnnuvn9pQTgO2iXzUqXr4rFpOhpxm969FErnpF3rVDC-0iOBE5IM');"></div>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden bg-gray-200 dark:bg-gray-800 relative group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Glass of beer on a wooden table" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDAhgnXhOfj3dLSTVKFAI9i4UrwRpAE0HAiGvmWOMasJA2aUsIP6keJI_qklQJwYxKyuExuxyv4eENk7owpRNKwrhVRzrqNYkj8ZQmoYJqLAOa-dhnOTVSdg7eZ-4wk-tBusNKAZQ6ChKYgTLq8kKURJnpgsFpJO0M6E5m0uNdEsd1l25NLjVbd4KWxBrzYOvh-eWiLtlFEdYaqiGjDJcJOlrJeM_T-gZvWW2-odkn5CL-CMuPH1Gd4RSxNTRfENUPN7xKSj4j9Uno');"></div>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<span class="text-white font-bold text-lg">+2</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="fixed bottom-0 left-0 w-full p-4 pb-6 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md border-t border-[#e6e8eb] dark:border-white/5 z-50 shadow-[0_-5px_20px_-5px_rgba(0,0,0,0.1)]">
+<div class="flex gap-4 max-w-lg mx-auto">
+<button class="flex-1 h-14 rounded-full border-2 border-[#e6e8eb] dark:border-white/10 hover:bg-gray-50 dark:hover:bg-white/5 text-[#111418] dark:text-white font-bold text-base flex items-center justify-center gap-2 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-primary">chat_bubble</span>
+                チャットを始める
+            </button>
+<button class="flex-1 h-14 rounded-full bg-primary hover:bg-primary/90 text-white font-bold text-base flex items-center justify-center gap-2 shadow-lg shadow-primary/30 transition-transform active:scale-95">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+                いいねを送る
+            </button>
+</div>
+</div>
+</div>
+
+</body></html>
