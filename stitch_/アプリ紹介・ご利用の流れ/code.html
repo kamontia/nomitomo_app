@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Drinking Buddy - App Introduction</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee8c2b",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221910",
+                        "surface-dark": "#2d241b",
+                        "border-dark": "#45382e",
+                        "text-secondary": "#b9ab9d"
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #221910; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #45382e; 
+            border-radius: 3px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-black dark:text-white overflow-x-hidden">
+<div class="relative flex h-auto min-h-screen w-full flex-col max-w-[480px] mx-auto bg-background-light dark:bg-background-dark group/design-root border-x border-border-dark/30">
+<!-- Top App Bar -->
+<header class="flex items-center bg-transparent p-4 justify-between sticky top-0 z-50 backdrop-blur-md bg-background-dark/80 border-b border-border-dark/50">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">sports_bar</span>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Drinking Buddy</h2>
+</div>
+<button class="flex items-center justify-end group">
+<p class="text-text-secondary group-hover:text-primary transition-colors text-sm font-bold leading-normal tracking-[0.015em]">Login</p>
+</button>
+</header>
+<!-- Hero Section -->
+<div class="p-4">
+<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-center justify-end pb-12 px-4 relative overflow-hidden shadow-2xl shadow-black/50" data-alt="Group of friends toasting with beer glasses in a warm, dimly lit bar atmosphere" style='background-image: linear-gradient(to top, rgba(34, 25, 16, 1) 0%, rgba(34, 25, 16, 0.4) 50%, rgba(34, 25, 16, 0.2) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAIs8YaPXn7j_wx3hfPIlWJ1-jZA7UGKTvH3I_xxHK7itaBVEx2J6XrIrbCvjyoQ6IURKQozN0uHGewgkLPWa1aeeLsddfk2bcfcJS2AjjJQw53WK8YEbldi7lAi92k8xn1B5-BlLEaUAF0PU2zG3Z5En9-6BvKYTSaxLCFjkJN7_sTr88K-s3Yc1SS7IaRmbx9DZiHcWQVEGV4tQk3mzp5U3n6ZuwcWDiIr2vxdl2fqqpM3sv-8DPxZik2oMW813amSSRjTU8Tkgc");'>
+<div class="flex flex-col gap-3 text-center z-10">
+<div class="inline-flex items-center justify-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 mx-auto w-fit">
+<span class="w-2 h-2 rounded-full bg-[#06C755]"></span>
+<span class="text-xs font-medium text-white/90">LINE Integrated</span>
+</div>
+<h1 class="text-white text-4xl font-black leading-[1.1] tracking-[-0.033em] drop-shadow-sm">
+                        Tonight’s Toast Starts Here.
+                    </h1>
+<p class="text-text-secondary text-base font-medium leading-normal max-w-[280px] mx-auto">
+                        Connect, meet, and cheers with new drinking buddies nearby.
+                    </p>
+</div>
+<button class="flex w-full max-w-[320px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-6 bg-primary hover:bg-primary/90 transition-all text-background-dark text-base font-bold leading-normal tracking-[0.015em] shadow-lg shadow-primary/20 z-10 transform active:scale-95">
+<span class="truncate">Get Started Free</span>
+</button>
+</div>
+</div>
+<!-- How to Use Headline -->
+<div class="flex flex-col items-center pt-8 pb-4">
+<h2 class="text-white tracking-light text-[28px] font-bold leading-tight px-4 text-center">How to Use</h2>
+<div class="h-1 w-12 bg-primary rounded-full mt-2"></div>
+</div>
+<!-- Timeline / Steps -->
+<div class="grid grid-cols-[48px_1fr] gap-x-2 px-6 pb-8">
+<!-- Step 1 -->
+<div class="flex flex-col items-center pt-2">
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-surface-dark border border-border-dark text-[#06C755] shadow-lg z-10">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</div>
+<div class="w-[2px] bg-border-dark h-full grow my-2 relative"></div>
+</div>
+<div class="flex flex-1 flex-col py-2 pb-8">
+<p class="text-primary text-sm font-bold uppercase tracking-wider mb-1">Step 1</p>
+<p class="text-white text-lg font-bold leading-tight mb-1">LINEでかんたん登録</p>
+<p class="text-text-secondary text-sm font-normal leading-normal">Easy sign-up via your existing LINE account.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center">
+<div class="w-[2px] bg-border-dark h-2"></div>
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-surface-dark border border-border-dark text-primary shadow-lg z-10">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div class="w-[2px] bg-border-dark h-full grow my-2"></div>
+</div>
+<div class="flex flex-1 flex-col py-2 pb-8">
+<p class="text-primary text-sm font-bold uppercase tracking-wider mb-1">Step 2</p>
+<p class="text-white text-lg font-bold leading-tight mb-1">近くの飲み友を探す</p>
+<p class="text-text-secondary text-sm font-normal leading-normal">Use GPS to find buddies wanting to grab a drink nearby.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center pb-2">
+<div class="w-[2px] bg-border-dark h-2"></div>
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-surface-dark border border-border-dark text-primary shadow-lg z-10">
+<span class="material-symbols-outlined text-[20px]">wine_bar</span>
+</div>
+</div>
+<div class="flex flex-1 flex-col py-2">
+<p class="text-primary text-sm font-bold uppercase tracking-wider mb-1">Step 3</p>
+<p class="text-white text-lg font-bold leading-tight mb-1">メッセージを送って乾杯！</p>
+<p class="text-text-secondary text-sm font-normal leading-normal">Match, send a message, and enjoy your night!</p>
+</div>
+</div>
+<!-- Feature Section -->
+<div class="flex flex-col gap-6 px-4 py-8 bg-surface-dark/50 border-y border-border-dark/50">
+<div class="flex flex-col gap-2 text-center">
+<h2 class="text-white tracking-light text-[28px] font-bold leading-tight">
+                    Why Choose Us
+                </h2>
+<p class="text-text-secondary text-sm font-normal leading-normal max-w-[300px] mx-auto">
+                    Safe, secure, and fun matching based on your real-time location.
+                </p>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<!-- Card 1 -->
+<div class="flex gap-4 rounded-xl border border-border-dark bg-background-dark p-5 items-start">
+<div class="p-3 rounded-full bg-primary/10 text-primary shrink-0">
+<span class="material-symbols-outlined" style="font-size: 28px;">verified_user</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-white text-lg font-bold leading-tight">Safe &amp; Secure</h3>
+<p class="text-text-secondary text-sm font-normal leading-relaxed">
+                            Verified integration with LINE ensures real profiles and safety for everyone.
+                        </p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex gap-4 rounded-xl border border-border-dark bg-background-dark p-5 items-start">
+<div class="p-3 rounded-full bg-primary/10 text-primary shrink-0">
+<span class="material-symbols-outlined" style="font-size: 28px;">radar</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-white text-lg font-bold leading-tight">Instant Matching</h3>
+<p class="text-text-secondary text-sm font-normal leading-relaxed">
+                            Smart GPS-based logic connects you with people within walking distance.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer / App Store -->
+<div class="flex flex-col items-center gap-6 px-4 py-12 pb-16 bg-background-dark">
+<div class="text-center space-y-2">
+<h2 class="text-white text-2xl font-bold">Ready to Drink?</h2>
+<p class="text-text-secondary text-sm">Download the app and find your buddy tonight.</p>
+</div>
+<div class="flex flex-col w-full gap-3 max-w-[280px]">
+<!-- App Store Placeholder -->
+<button class="flex items-center justify-center gap-3 w-full bg-white text-black h-14 rounded-xl hover:bg-gray-100 transition-colors">
+<span class="material-symbols-outlined text-3xl">ios</span> <!-- Using Apple icon as proxy -->
+<div class="flex flex-col items-start leading-none">
+<span class="text-[10px] font-medium uppercase">Download on the</span>
+<span class="text-lg font-bold">App Store</span>
+</div>
+</button>
+<!-- Google Play Placeholder -->
+<button class="flex items-center justify-center gap-3 w-full bg-transparent border border-white/20 text-white h-14 rounded-xl hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-3xl">play_arrow</span> <!-- Using Play Arrow as proxy -->
+<div class="flex flex-col items-start leading-none">
+<span class="text-[10px] font-medium uppercase">Get it on</span>
+<span class="text-lg font-bold">Google Play</span>
+</div>
+</button>
+</div>
+<div class="pt-8 text-center">
+<p class="text-xs text-text-secondary/50">© 2024 Drinking Buddy. All rights reserved.</p>
+</div>
+</div>
+<!-- Spacer for safe area on mobile -->
+<div class="h-6 bg-background-dark"></div>
+</div>
+</body></html>
